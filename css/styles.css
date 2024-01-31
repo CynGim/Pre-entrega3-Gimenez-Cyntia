@@ -1,0 +1,477 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-image: url(../img/fondo.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+header {
+  background-color: black;
+  width: 100%;
+}
+
+.conteiner {
+  justify-content: space-around;
+}
+.conteiner .iconos {
+  margin: 10px;
+}
+.conteiner .iconos ion-icon {
+  position: relative;
+  top: 1px;
+  margin: 3px;
+  width: 20px;
+  height: 20px;
+  color: aliceblue;
+}
+.conteiner .iconos ion-icon:hover {
+  color: brown;
+}
+.conteiner ul {
+  margin-right: 50vw;
+  font-family: "Courier New", Courier, monospace;
+  color: aliceblue;
+  width: auto;
+  padding-left: 0;
+}
+.conteiner ul li {
+  list-style: none;
+  margin: 20px;
+}
+.conteiner ul li a {
+  font-size: 18px;
+  color: aliceblue;
+  font-weight: bolder;
+  text-decoration: none;
+}
+.conteiner ul li a:hover {
+  color: brown;
+}
+
+h1 {
+  color: brown;
+  font-size: 70px;
+  margin-left: 100px;
+  font-family: "Rajdhani", sans-serif;
+}
+
+footer {
+  display: block;
+  text-align: center;
+  background-color: black;
+  color: aliceblue;
+  width: 100%;
+}
+footer .piedepagina p {
+  margin-bottom: 0;
+  background-color: black;
+}
+
+.conteineralbunGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 3fr);
+  gap: 20px;
+}
+.conteineralbunGrid img {
+  width: 100%;
+  height: 80%;
+  border-radius: 150px;
+  border: solid 20px black;
+}
+
+.titulocarrucel {
+  background-color: black;
+}
+.titulocarrucel h2 {
+  font-family: "Dancing Script", cursive;
+  font-size: 50px;
+  margin-left: 40%;
+  color: brown;
+}
+
+.carousel-inner {
+  background-color: black;
+  border: solid 10px;
+}
+.carousel-inner img {
+  margin-left: 30%;
+}
+
+@media (max-width: 768px) {
+  .conteineralbunGrid {
+    display: block;
+    flex-direction: column;
+  }
+  .titulocarrucel {
+    margin-right: 20%;
+  }
+  .titulocarrucel h2 {
+    font-size: 25px;
+  }
+  .carousel-inner {
+    width: 100%;
+  }
+  .carousel-inner img {
+    margin-left: 0;
+    width: 100%;
+  }
+}
+.discos, .conteinerfechas, .conteinermusic, .contenedorpadre .conteinernoticias .contenedorgif, .contenedorpadre, header, .conteiner, .conteiner .iconos, .conteiner ul {
+  display: flex;
+  flex-direction: row;
+}
+
+.titulo {
+  margin-bottom: 20px;
+  align-items: flex-start;
+  margin-right: 50px;
+}
+.titulo h2 {
+  color: whitesmoke;
+  margin-left: 100px;
+}
+
+.contenedorpadre {
+  justify-content: space-around;
+  margin: 5%;
+}
+.contenedorpadre .conteinernoticias {
+  text-align: left;
+}
+.contenedorpadre .conteinernoticias .conteinernoticias img {
+  width: 5vh;
+}
+.contenedorpadre .conteinernoticias .contenedorgif .gifcontent {
+  display: block;
+  background-color: black;
+  border-radius: 10%;
+  overflow-x: hidden;
+  width: 50%;
+  margin: 5px;
+}
+.contenedorpadre .conteinernoticias .contenedorgif .gifcontent h3 {
+  color: brown;
+}
+.contenedorpadre .conteinernoticias .contenedorgif .gifcontent p {
+  color: aliceblue;
+  text-align: center;
+}
+.contenedorpadre .conteinernoticias .contenedorgif .gifcontent img {
+  width: 100%;
+}
+.contenedorpadre .conteinernoticias .noticias {
+  text-align: center;
+  border: double 10px;
+  width: 50vw;
+  background-color: black;
+  margin: 15px;
+  border-radius: 50px;
+  color: brown;
+}
+.contenedorpadre .conteinernoticias .noticias p {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: aliceblue;
+  font-weight: bold;
+  font-family: "Source Code Pro", monospace;
+  font-size: 12px;
+  padding: 5px;
+}
+.contenedorpadre .conteinernoticias .noticias button {
+  color: aliceblue;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+.contenedorpadre .conteinernoticias .noticias .infoboton {
+  background-color: #2C065C;
+  border-radius: 20px;
+}
+.contenedorpadre .imagen {
+  text-align: center;
+  color: aliceblue;
+  display: block;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-size: 100px;
+  font-family: "Source Code Pro", monospace;
+  font-weight: bold;
+  border: double black 10px;
+  margin-left: 30%;
+  margin-bottom: 30px;
+  border-radius: 50px;
+  padding: 5px;
+}
+.contenedorpadre .imagen p {
+  font-size: 15px;
+}
+.contenedorpadre .imagen img {
+  width: 100%;
+  border-radius: 30px;
+}
+
+.logomusic img {
+  width: 100px;
+  height: 80px;
+}
+
+.conteinermusic {
+  background-color: black;
+  padding: 50px;
+}
+.conteinermusic .tituloyp {
+  display: block;
+}
+.conteinermusic .tituloyp h1 {
+  margin-left: 40%;
+}
+.conteinermusic .tituloyp p {
+  text-align: center;
+  color: aliceblue;
+  font-family: "Source Code Pro", monospace;
+  font-size: 20px;
+  margin: 30px;
+}
+
+.musica {
+  display: inline;
+  justify-content: space-around;
+  background-color: black;
+  width: 100%;
+}
+.musica iframe {
+  height: 30vw;
+  width: 100%;
+  border: 0;
+}
+.musica iframe iframe {
+  background-color: #2C065C;
+}
+
+.tituloshows {
+  margin-left: 20vw;
+}
+.tituloshows h1 {
+  font-size: 50px;
+  font-family: "Kay Pho Du", serif;
+}
+
+.conteinerfechas {
+  justify-content: center;
+  background-color: black;
+}
+.conteinerfechas .evento {
+  background-color: black;
+  margin: 10px;
+}
+.conteinerfechas .evento img {
+  height: 320px;
+  width: auto;
+}
+.conteinerfechas .evento p {
+  color: aliceblue;
+}
+.conteinerfechas .evento h4 {
+  font-family: "Kay Pho Du", serif;
+  font-size: 15px;
+  color: brown;
+}
+
+.discos {
+  justify-content: center;
+  background-color: black;
+  padding: 30px;
+}
+.discos p {
+  text-align: center;
+  font-size: 20px;
+  color: aliceblue;
+  font-family: "Kay Pho Du", serif;
+  margin: 10px;
+}
+.discos .pya {
+  margin: 50px;
+}
+.discos .pya button {
+  background-color: rgb(103, 9, 7);
+  color: aliceblue;
+  border-radius: 20px;
+  padding: 5px;
+  margin-left: 40%;
+  margin-top: 10%;
+}
+
+.contenedorcontact {
+  width: 50%;
+  margin-left: 20%;
+  border: solid 20px black;
+  border-radius: 50px;
+  margin-bottom: 30px;
+  padding: 10px;
+}
+.contenedorcontact span {
+  background-color: brown;
+}
+.contenedorcontact input {
+  background-color: black;
+}
+.contenedorcontact input:focus {
+  border: #2C065C;
+  background-color: rgb(103, 9, 7);
+  color: aliceblue;
+}
+.contenedorcontact label {
+  color: aliceblue;
+}
+.contenedorcontact textarea {
+  background-color: black;
+}
+.contenedorcontact textarea:focus {
+  border: #2C065C;
+  background-color: rgb(103, 9, 7);
+  color: aliceblue;
+}
+.contenedorcontact .botonformulario button {
+  background-color: brown;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+@media (max-width: 768px) {
+  .conteiner {
+    display: block;
+    flex-direction: column;
+    width: 100%;
+  }
+  .menu ul {
+    display: block;
+    flex-direction: column;
+  }
+  .titulo {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .titulo h1 {
+    color: brown;
+    font-size: 30px;
+  }
+  .titulo h2 {
+    color: aliceblue;
+    font-size: 20px;
+  }
+  .contenedorpadre {
+    display: block;
+    flex-direction: column;
+    justify-content: center;
+    overflow-x: hidden;
+    padding: 35px;
+  }
+  .noticias {
+    width: 50%;
+  }
+  .noticias p {
+    font-size: 9px;
+    color: aliceblue;
+  }
+  .imagen {
+    width: 100%;
+    position: relative;
+    right: 40%;
+    overflow-x: hidden;
+  }
+  .imagen img {
+    width: 50%;
+    height: 50%;
+  }
+  .imagen p {
+    font-size: 13px;
+  }
+  .imagen2 {
+    margin: 20px;
+    flex-wrap: wrap;
+  }
+  a :hover {
+    color: brown;
+  }
+  footer {
+    width: 100%;
+  }
+  .conteinermusic {
+    display: block;
+    justify-content: center;
+  }
+  .conteinermusic img {
+    width: 100%;
+    height: auto;
+  }
+  .conteinermusic .tituloyp {
+    display: block;
+    justify-content: center;
+    width: 100%;
+  }
+  .conteinermusic .tituloyp h1 {
+    font-size: 20px;
+  }
+  .conteinermusic .tituloyp p {
+    font-size: 10px;
+  }
+  .musica {
+    padding: 10px;
+    margin: 10px;
+  }
+  .musica iframe {
+    width: 100%;
+    overflow-x: hidden;
+  }
+  .titulocontact h1 {
+    font-size: 40px;
+  }
+  ul {
+    padding-left: 0;
+  }
+  .contenedorcontact {
+    margin: 20px;
+    width: 80%;
+  }
+  .tituloshows {
+    align-items: center;
+  }
+  .tituloshows h1 {
+    margin-left: 0;
+    font-size: 15px;
+  }
+  .conteinerfechas {
+    display: block;
+    flex-direction: column;
+    align-items: center;
+  }
+  .conteinerfechas .evento h4 {
+    width: 60%;
+  }
+  .conteinerfechas .evento p {
+    width: 60%;
+  }
+  .conteinerfechas .evento img {
+    width: auto;
+  }
+  .discos {
+    display: block;
+    width: 100%;
+  }
+  .discos p {
+    font-size: 15px;
+    margin: 0;
+  }
+  .discos img {
+    width: 100%;
+  }
+  .discos .pya button {
+    margin-left: 0;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

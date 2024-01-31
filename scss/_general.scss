@@ -1,0 +1,74 @@
+body{
+    background-image: url(../img/fondo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+header{
+    @extend%flexrow;
+    background-color: $colorFondo;
+    width: $anchosmax;
+  
+}
+    .conteiner{
+        @extend%flexrow;
+        justify-content: space-around;
+         
+        .iconos{
+            @extend%flexrow;
+            margin: 10px;
+            ion-icon{
+                position: relative; top: 1px;
+                margin:3px;
+                width: 20px;
+                height: 20px;
+                color: aliceblue;
+                &:hover{
+                    color: $colorTexto;
+                }
+            }
+        }
+        ul{
+            @extend %flexrow;
+            margin-right: 50vw;
+            font-family:'Courier New', Courier, monospace;
+            color:aliceblue;
+            width: auto;
+            padding-left: 0;
+            li{
+                list-style: none;
+                margin: 20px;
+                a {
+                    font-size: 18px;
+                    color: aliceblue;
+                    font-weight: bolder;
+                    text-decoration: none;
+                    &:hover {
+                        color:$colorTexto;
+                    }    
+                } 
+            }
+        }
+        
+    }  
+h1{
+    color: $colorTexto;
+    font-size: 70px;
+    margin-left: 100px;
+    font-family:$tipoletra;
+}
+//pie de pagina
+footer{
+    display: block;
+    text-align:center;
+    background-color:$colorFondo;
+    color: aliceblue;
+    width: $anchosmax;
+    .piedepagina{
+        p{
+            margin-bottom: 0;
+            background-color: $colorFondo;
+        }
+    }
+
+}
