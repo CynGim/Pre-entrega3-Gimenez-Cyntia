@@ -23,7 +23,7 @@
     margin: 5%;
     .conteinernoticias{
         text-align: left;
-        .conteinernoticias img{width: 5vh }
+        .conteinernoticias {width: 50vh }
         .contenedorgif{
             @extend %flexrow;
              .gifcontent{
