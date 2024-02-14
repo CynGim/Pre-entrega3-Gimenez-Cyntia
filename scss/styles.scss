@@ -95,8 +95,12 @@
         img{
             width: 100%;
             border-radius: 30px;
+        }  
+        .conteineralbunGrid img:hover {
+            filter: brightness(100%);
+            transform: scale(1.1);
+            transition: 2s;
         }
-    
 }
 }
 //scss music
